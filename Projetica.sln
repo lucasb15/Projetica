@@ -3,9 +3,12 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.14.36811.4
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Projetica.Core\Domain.csproj", "{9DB24B45-8FB5-42FE-AEC7-18CA72FA99D4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{9DB24B45-8FB5-42FE-AEC7-18CA72FA99D4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{9F38154C-6131-4E84-A2BC-4384C85DBE67}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9DB24B45-8FB5-42FE-AEC7-18CA72FA99D4} = {9DB24B45-8FB5-42FE-AEC7-18CA72FA99D4}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "Application\Application.csproj", "{6F142341-86BF-4B1D-A30A-6B29298012DB}"
 EndProject
